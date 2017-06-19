@@ -1,0 +1,396 @@
+{
+  "activity":"为纪念《三联生活周刊》旗下新媒体品牌松果生活APP上线一周年，松果生活联合三里屯太古里一起主办的2016松果“生活家年华”活动即将举办。2016年12月31日-2017年1月2日，在北京三里屯太古里南区橙色大厅及南广场，梦幻的气泡屋装置展览、吃喝玩乐于一体的市集、大咖生活家云集的主题演讲、有趣的设计手作体验······一切美好生活，都可以在这里找到答案！",
+  "guest":[
+    {
+      "url":"images/zc.jpg",
+      "name":"周宸宸",
+      "introduction":"家具设计师"
+    },
+    {
+      "url":"images/hw.jpg",
+      "name":"林瀚&晚晚",
+      "introduction":"木木美术馆创始人、收藏家"
+    },
+    {
+      "url":"images/sh.jpg",
+      "name":"史航",
+      "introduction":"知名编剧、策划人"
+    },
+    {
+      "url":"images/xj.jpg",
+      "name":"向京",
+      "introduction":"艺术家"
+    },
+    {
+      "url":"images/ysb.jpg",
+      "name":"杨树鹏",
+      "introduction":"电影导演，作家，诗人"
+    },
+    {
+      "url":"images/zzq.jpg",
+      "name":"朱哲琴",
+      "introduction":"著名音乐人、跨界艺术家"
+    },
+    {
+      "url":"images/zen.jpeg",
+      "name":"醉鹅娘",
+      "introduction":"企鹅团联合创始人"
+    },
+    {
+      "url":"images/mkm.jpg",
+      "name":"马凯民",
+      "introduction":"Soloist Coffee主理人"
+    }
+  ],
+  "shops": {
+    "introduce": "精心挑选的30家美食与设计品牌将出现在太古里南区橙色大厅。中央体验区， 9场花艺、咖啡、木艺、皮具等不同主题的手作课程供大家体验。每个小时都会有市集主人登台与现场观众互动，送出自己的心仪好礼",
+     "eat":[
+       {
+         "logo":"images/b.jpg"
+       },
+       {
+         "logo":"images/b.jpg"
+       },
+       {
+         "logo":"images/b.jpg"
+       },
+       {
+         "logo":"images/b.jpg"
+       },
+       {
+         "logo":"images/b.jpg"
+       },
+       {
+         "logo":"images/b.jpg"
+       },
+       {
+         "logo":"images/b.jpg"
+       },
+       {
+         "logo":"images/b.jpg"
+       },
+       {
+         "logo":"images/b.jpg"
+       },
+       {
+         "logo":"images/b.jpg"
+       },
+       {
+         "logo":"images/b.jpg"
+       },
+       {
+         "logo":"images/b.jpg"
+       }
+     ],
+    "do":[
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      }
+    ],
+    "play":[
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      },
+      {
+        "logo":"images/b.jpg"
+      }
+    ]
+     },
+  "schedule":[
+    {
+      "time":"12月31日",
+       "AM":[
+         {
+           "time":"15:00-16:00",
+           "text":"？？？？"
+         },
+         {
+           "time":"15:00-16:00",
+           "text":"会课堂 手工干花"
+         },
+         {
+           "time":"15:00-16:00",
+           "text":"本意手作 木质优盘"
+         }
+       ],
+      "PM":{
+          "time":"18:30-20:00",
+          "content":"生活家演讲",
+          "list":[
+            {
+              "title":"艺术与生活",
+              "name":"向京",
+              "video":" "
+            },
+            {
+              "title":"戏剧与生活",
+              "name":"史航",
+              "video":" "
+            },
+            {
+              "title":"音乐与生活",
+              "name":"朱哲琴",
+              "video":" "
+            },
+            {
+              "title":"美术馆与生活",
+              "name":"林瀚&晚晚",
+              "video":" "
+            },
+            {
+              "title":"电影与生活",
+              "name":"杨树鹏",
+              "video":" "
+            }
+          ]
+        }
+
+    },
+    {
+      "time":"1月1日",
+      "AM":[
+        {
+          "time":"15:00-16:00",
+          "text":"hey！coffee 手冲课"
+        },
+        {
+          "time":"15:00-16:00",
+          "text":"墨念女塾 羊毛毡"
+        },
+        {
+          "time":"15:00-16:00",
+          "text":"未满客厅 沙拉制作"
+        },
+        {
+          "time": "12:00",
+          "text": "集市开始"
+        }
+      ],
+      "PM":{
+        "time":"18:30-20:00",
+        "content":"生活家演讲",
+        "list":[
+          {
+            "title":"精品咖啡之美",
+            "name":"Phil",
+            "video":" "
+          },
+          {
+            "title":"（旅游）",
+            "name":"宝哥",
+            "video":" "
+          },
+          {
+            "title":"酒精与白日梦",
+            "name":"醉鹅娘",
+            "video":" "
+          },
+          {
+            "title":"（星空摄影师）",
+            "name":"叶梓颐",
+            "video":" "
+          }
+        ]
+      }
+
+    },
+    {
+      "time":"1月2日",
+      "AM":[
+        {
+          "time":"15:00-16:00",
+          "text":"吾十小院 中国茶道"
+        },
+        {
+          "time":"15:00-16:00",
+          "text":"会课堂  泡菜制作"
+        },
+        {
+          "time":"15:00-16:00",
+          "text":"集市开始"
+        },
+        {
+          "time": "12:00",
+          "text": "集市开始"
+        }
+      ],
+      "PM":{
+        "time":"18:30-20:00",
+        "content":"生活家演讲",
+        "list":[
+          {
+            "title":"从一朵小花到绿色星球",
+            "name":"高意静",
+            "video":" "
+          },
+          {
+            "title":"人工智能",
+            "name":"青山周平",
+            "video":" "
+          },
+          {
+            "title":"小程序",
+            "name":"周宸宸",
+            "video":" "
+          },
+          {
+            "title":"如何防止假货",
+            "name":"刘强东",
+            "video":" "
+          }
+        ]
+      }
+
+    }
+  ],
+  "dynamic":[
+    {
+      "url":"images/c.jpg",
+      "text":"马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频"
+    },
+    {
+      "url":"images/c.jpg",
+      "text":"马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频"
+    }, {
+      "url":"images/c.jpg",
+      "text":"马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频"
+    }, {
+      "url":"images/c.jpg",
+      "text":"马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频"
+    }, {
+      "url":"images/c.jpg",
+      "text":"马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频"
+    }, {
+      "url":"images/c.jpg",
+      "text":"马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频"
+    }, {
+      "url":"images/c.jpg",
+      "text":"马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频"
+    }, {
+      "url":"images/c.jpg",
+      "text":"马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频"
+    }, {
+      "url":"images/c.jpg",
+      "text":"马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频"
+    }, {
+      "url":"images/c.jpg",
+      "text":"马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频"
+    }, {
+      "url":"images/c.jpg",
+      "text":"马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频"
+    }, {
+      "url":"images/c.jpg",
+      "text":"马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频马云演讲视频"
+    }
+  ],
+  "partner":[
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    },
+    {
+      "icon":"images/b.jpg"
+    }
+  ]
+}

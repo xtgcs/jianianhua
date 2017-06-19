@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>活动介绍页</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css" >
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css" >
+    <link rel="stylesheet" href="//cdn.bootcss.com/uikit/2.25.0/css/uikit.css" />
+    <link rel="stylesheet" href="css/introduce.css" >
+</head>
+<body ng-controller="myCtrl">
+<div>
+    <!--[if lt IE 8]>
+    <p class="browsehappy">你的浏览器版本<strong>太低了</strong> 快
+        <a href="http://browsehappy.com/">升级</a>一下吧</p>
+    <![endif]-->
+
+</div>
+<nav ng-if="show">
+    <div class="nav-wrap" id="nav">
+        <ul class="nav" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true,cls:'active',topoffset:400}">
+            <!--<li ng-click="gotointroduce()"><i></i><span>介绍</span></li>-->
+            <!--<li ng-click="gotoguest()"><i></i><span>嘉宾</span></li>-->
+            <!--<li ng-click="gotofair()"><i></i><span>市集</span></li>-->
+            <!--<li ng-click="gotoschedule()"><i></i><span>日程</span></li>-->
+            <!--<li ng-click="gotodynamic()"><i></i><span>动态</span></li>-->
+            <!--<li ng-click="gotoinstitutions()"><i></i><span>主办</span></li>-->
+            <!--<li ng-click="gototraffic()"><i></i><span>地图</span><i></i></li>-->
+
+            <li><i></i><a href="#introduce"><span>介绍</span></a></li>
+            <li><i></i><a href="#guest">嘉宾</a></li>
+            <li><i></i><a href="#fair">市集</a></li>
+            <li><i></i><a href="#schedule">日程</a></li>
+            <li><i></i><a href="#dynamic">动态</a></li>
+            <li><i></i><a href="#institutions">主办</a></li>
+            <li><i></i><a href="#traffic">地图</a><i></i></li>
+        </ul>
+    </div>
+
+ </nav>
+       <div class="nav-box"></div>
+       <div class="banner" id="pcbanner">
+           <img src="images/web_banner.jpg" alt="">
+               </div>
+        <div class="banner" id="mbanner">
+            <img src="images/h5_banner.png" alt="">
+        </div>
+ <div class="container" >
+       <div class="content" >
+           <div class="introduce" id="introduce">
+               <div class="title  introduce-title">活动介绍</div>
+               <div class="main introduce-content">
+                   <div class="introduce-text">
+                       {{data.activity}}
+                   </div>
+               </div>
+           </div>
+           <div class="guest" id="guest">
+               <div class="title guest-title">
+                   演讲嘉宾
+               </div>
+               <div class="main guest-content">
+                   <ul class="list">
+                       <li class="item" ng-repeat="item in data.guest">
+                                   <img ng-src="{{item.url}}" alt="" class="head">
+                                   <span class="name">{{item.name}}</span>
+                                   <span class="halving-line"></span>
+                                   <div class="introduction">
+                                      {{item.introduction}}
+                                   </div>
+                       </li>
+                       <!--<div class="divider" ng-if=""></div>-->
+                   </ul>
+               </div>
+
+           </div>
+           <div class="fair" id="fair">
+                 <div class="title fair-title">
+                     商铺集市
+                 </div>
+               <div class="main fair-content">
+                   <div class="fair-introduction">
+                       {{data.shops.introduce}}
+                   </div>
+                   <div class="category">
+                       <ul>
+                           <li>
+                               <div class="mark-box" ng-show="!switch">
+                                   <span class="mark-name">吃  喝</span>
+                                   <span class="icon">
+                                       <img src="images/food.png" alt="">
+                                   </span>
+                               </div>
+                               <div class="mark-box" ng-show="switch">
+                                   <p class="mark-name">吃<span class="icon">
+                                       <img src="images/food.png" alt="">
+                                   </span>喝</p>
+                               </div>
+                               <div class="category-box">
+                                   <ul class="category-list">
+                                       <li ng-repeat="list in data.shops.eat">
+                                           <img ng-src="{{list.logo}}" alt="">
+                                       </li>
+                                   </ul>
+                               </div>
+                           </li>
+                           <li>
+                               <div class="mark-box" ng-show="!switch">
+                                   <span class="mark-name">手  做</span>
+                                   <span class="icon">
+                                       <img src="images/handwork.png" alt="">
+                                   </span>
+                               </div>
+                               <div class="mark-box" ng-show="switch">
+                                   <p class="mark-name">手<span class="icon">
+                                       <img src="images/handwork.png" alt="">
+                                   </span>做</p>
+                               </div>
+                               <div class="category-box">
+                                   <ul class="category-list">
+                                       <li ng-repeat="list in data.shops.do">
+                                           <img ng-src="{{list.logo}}" alt="">
+                                       </li>
+                                   </ul>
+                               </div>
+                           </li>
+                           <li>
+                               <div class="mark-box" ng-show="!switch">
+                                   <span class="mark-name">体  验</span>
+                                   <span class="icon">
+                                       <img src="images/experience.png" alt="">
+                                   </span>
+                               </div>
+                               <div class="mark-box" ng-show="switch">
+                                   <p class="mark-name">体<span class="icon">
+                                       <img src="images/experience.png" alt="">
+                                   </span>验</p>
+                               </div>
+                               <div class="category-box">
+                                   <ul class="category-list">
+                                       <li ng-repeat="list in data.shops.play">
+                                           <img ng-src="{{list.logo}}" alt="">
+                                       </li>
+                                   </ul>
+                               </div>
+                           </li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+           <div class="schedule" id="schedule">
+                <div class="title">活动日程</div>
+                <div class="main">
+                    <ul class="schedule-list">
+                        <li ng-repeat="item in data.schedule">
+                            <div class="time">{{item.time}}</div>
+                                <div class="time-list">
+                                    <ul>
+                                        <li ng-repeat="tm in item.AM">
+                                            <div class="tm">
+                                                {{tm.time}}
+                                                <div class="timeline"></div>
+                                            </div>
+                                            <p class="activity">{{tm.text}}</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            <div class="speech-box">
+                                <div class="speech-list">
+                                    <div class="time2">
+                                        {{item.PM.time}}
+                                        <div class="line"></div>
+                                    </div>
+                                    <p class="live">{{item.PM.content}}</p>
+                                    <ul>
+                                        <li ng-repeat="list in item.PM.list">
+                                            <p class="speech-title">{{list.title}}</p>
+                                            <p class="speech-name">{{list.name}}</p>
+                                            <p class="speech-video">{{list.video}}</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+           </div>
+           <div class="dynamic" id="dynamic">
+                 <div class="title">动态</div>
+                <div class="main dynamic-content">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" ng-if="!switch">
+                                <ul class="dynamic-list">
+                                    <li ng-repeat="list in first" >
+                                        <a href="#">
+                                            <img ng-src="{{list.url}}" alt="">
+                                        </a>
+                                        <p class="describe">{{list.text}}</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide"  ng-if="!switch">
+                                <ul class="dynamic-list">
+
+                                    <li ng-repeat="list in second" >
+
+                                        <a href="#">
+                                            <img ng-src="{{list.url}}" alt="">
+                                        </a>
+                                        <p class="describe">{{list.text}}</p>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="swiper-slide" ng-if="switch" ng-repeat="list in data.dynamic">
+                                <ul class="dynamic-list">
+                                    <li>
+                                        <a href="#">
+                                            <img ng-src="{{list.url}}" alt="">
+                                        </a>
+                                        <p class="describe">{{list.text}}</p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- 如果需要分页器 -->
+                        <div class="swiper-pagination" ng-class="{'page':switch,'showpage':!switch}"></div>
+
+                        <!-- 如果需要导航按钮 -->
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+           </div>
+           <div class="institutions" id="institutions">
+               <div class="title institutions-title">
+                   主办机构
+               </div>
+               <div class="main institutions-content">
+                   <ul class="cooperation">
+                       <li ng-repeat="list in data.partner"><img ng-src="{{list.icon}}" alt=""></li>
+                   </ul>
+               </div>
+           </div>
+           <div class="traffic" id="traffic">
+               <div class="title traffic-title">
+                   交通指南
+               </div>
+               <div class="main traffic-content">
+                    <div class="map">
+                        <img src="images/live_address.jpg" alt="">
+                    </div>
+                   <div class="address" ng-show="!switch">
+                       【时间】<br/>
+                       <p class="time">12月31-1月2日</p>
+                       【地址】<br/>
+                       <p class="place">北京 三里屯 橙色大厅</p>
+                   </div>
+                   <div class="address" ng-show="switch">
+                       <p>
+                           <span class="txt">【时间】</span>
+                           <span class="time">  12月31-1月2日</span>
+                       </p>
+                      <p>
+                         <span class="txt">
+                             【地址】
+                         </span>
+                          <span class="place">  北京 三里屯 橙色大厅</span>
+                      </p>
+
+                   </div>
+               </div>
+           </div>
+               <div class="sign">
+                   <div class="sign-title">报名方式</div>
+                   <div class="sign-box">
+                       <div class="code">
+                           <img src="images/e.jpg" alt="">
+                       </div>
+                       <div class="prompt">
+                           微信关注松果公众号，免费领取活动门票
+                       </div>
+                   </div>
+               </div>
+       </div>
+     <div class="footer" ng-show="state" ng-if="switch">
+         <div class="logo">
+             <img src="images/Artboard.png" alt="">
+         </div>
+         <div class="wx">
+             微信关注“松果生活”公众号，了解更多活动详情
+         </div>
+         <!--<div class="focus" ng-click="focus()">关注公众号</div>-->
+     </div>
+   </div>
+ <!--<div class="bounced" ng-hide="state">-->
+     <!--<div class="close">-->
+         <!--<span ng-click="close()">-->
+             <!--<img src="" alt="">-->
+         <!--</span>-->
+     <!--</div>-->
+     <!--<div class="ecode">-->
+         <!--<img src="images/sg.jpg" alt="">-->
+     <!--</div>-->
+     <!--<div class="guide">-->
+         <!--长按识别图中二维码关注松果生活公众号-->
+     <!--</div>-->
+ <!--</div>-->
+   <script src="js/angular.js"></script>
+   <script src="js/jquery-2.0.3.min.js"></script>
+   <script src="//cdn.bootcss.com/uikit/2.25.0/js/uikit.js"></script>
+   <script src="js/swiper-3.4.0.min.js"></script>
+   <script src="js/index.js"></script>
+   <script>
+       var mySwiper = new Swiper ('.swiper-container', {
+           direction: 'horizontal',
+           loop: true,
+           initialSlide :1,
+           // 如果需要分页器
+           pagination: '.swiper-pagination',
+
+           // 如果需要前进后退按钮
+           nextButton: '.swiper-button-next',
+           prevButton: '.swiper-button-prev'
+       })
+   </script>
+</body>
+</html>

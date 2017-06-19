@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>活动报名</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css" >
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css" >
+    <link rel="stylesheet" href="//cdn.bootcss.com/uikit/2.25.0/css/uikit.css" />
+    <link rel="stylesheet" href="css/ticket.css" >
+</head>
+<body ng-controller="ticketCtrl">
+<div class="container">
+    <div >
+        <!--[if lt IE 8]>
+        <p class="browsehappy">你的浏览器版本<strong>太低了</strong> 快
+            <a href="http://browsehappy.com/">升级</a>一下吧</p>
+        <![endif]-->
+
+    </div>
+    <div ng-include="'partials/banner.html'"></div>
+    <div class="content">
+        <div id="nav" class="nav" data-uk-scrollspy-nav="{closest:'li', smoothscroll:true,cls:'active',topoffset:400}"  ng-class="{'navBar':navBarFixed }">
+            <ul>
+                <li><a href="#one">12月31日</a></li>
+                <li><a href="#two">1月1日</a></li>
+                <li><a href="#three">1月2日</a></li>
+            </ul>
+        </div>
+        <div class="box item">
+            <div class="btn">市集（3天）</div>
+            <div class="line"></div>
+            <div class="line two"></div>
+            <div class="title">欢迎来到[2016生活家年华]</div>
+            <div class="item1-content">
+                松果生活嘉年华为您精心挑选了三十家优质商家，为您的生活增添一份美丽，一份甜蜜，一份爱意。
+            </div>
+            <div class="item1-btn">立即报名</div>
+            <div class="item1-btn full">报名人数已满</div>
+            <div class="item1-btn full"><span>已报名</span><img src="images/correct.png" alt=""></div>
+            <div class="success" ng-show="false">
+                <img src="images/succeed.png" alt="">
+                <p class="text">报名成功</p>
+            </div>
+            <div class="success" ng-show="false">
+                <img src="images/fail.png" alt="">
+                <p class="text">报名失败</p>
+            </div>
+        </div>
+        <div class="list" id="one">
+            <div class="box item item2">
+                <div class="btn">12月31日</div>
+                <div class="line"></div>
+                <div class="line two"></div>
+                <div class="title">欢迎来到[2016生活家年华]</div>
+                <div class="item2-content">
+                    <p class="time">
+                        时间：1月2日 18：30-20：00
+                    </p>
+                    <p class="merchants">
+                        商家：单向空间
+                    </p>
+                    <p class="contents">
+                        内容：高颜值木工教你快速制作家具
+                    </p>
+                    <p class="price">价钱：¥100</p>
+                    <p class="num">
+                        已报名：4／5
+                    </p>
+                </div>
+                <div class="item2-btn">立即报名</div>
+                <div class="item2-btn full">报名人数已满</div>
+                <div class="item2-btn full"><span>已报名</span><img src="images/correct.png" alt=""></div>
+                <div class="success" ng-show="false">
+                    <img src="images/succeed.png" alt="">
+                    <p class="text">报名成功</p>
+                </div>
+                <div class="success" ng-show="false">
+                    <img src="images/fail.png" alt="">
+                    <p class="text">报名失败</p>
+                </div>
+            </div>
+            <div class="box item item2 item4">
+                <div class="line"></div>
+                <div class="line two"></div>
+                <div class="title">欢迎来到[2016生活家年华]</div>
+                <div class="item2-content">
+                    <p class="time">
+                        时间：1月2日 18：30-20：00
+                    </p>
+                    <p class="merchants">
+                        商家：单向空间
+                    </p>
+                    <p class="contents">
+                        内容：高颜值木工教你快速制作家具
+                    </p>
+                    <p class="price">价钱：¥100</p>
+                    <p class="num">
+                        已报名：4／5
+                    </p>
+                </div>
+                <div class="item2-btn">立即报名</div>
+                <div class="item2-btn full">报名人数已满</div>
+                <div class="item2-btn full"><span>已报名</span><img src="images/correct.png" alt=""></div>
+                <div class="success" ng-show="false">
+                    <img src="images/succeed.png" alt="">
+                    <p class="text">报名成功</p>
+                </div>
+                <div class="success" ng-show="false">
+                    <img src="images/fail.png" alt="">
+                    <p class="text">报名失败</p>
+                </div>
+            </div>
+            <div class="box item item2 item4">
+                <div class="line"></div>
+                <div class="line two"></div>
+                <div class="title">欢迎来到[2016生活家年华]</div>
+                <div class="item2-content">
+                    <p class="time">
+                        时间：1月2日 18：30-20：00
+                    </p>
+                    <p class="merchants">
+                        商家：单向空间
+                    </p>
+                    <p class="contents">
+                        内容：高颜值木工教你快速制作家具
+                    </p>
+                    <p class="price">价钱：¥100</p>
+                    <p class="num">
+                        已报名：4／5
+                    </p>
+                </div>
+                <div class="item2-btn">立即报名</div>
+                <div class="item2-btn full">报名人数已满</div>
+                <div class="item2-btn full"><span>已报名</span><img src="images/correct.png" alt=""></div>
+                <div class="success" ng-show="false">
+                    <img src="images/succeed.png" alt="">
+                    <p class="text">报名成功</p>
+                </div>
+                <div class="success" ng-show="false">
+                    <img src="images/fail.png" alt="">
+                    <p class="text">报名失败</p>
+                </div>
+            </div>
+            <div class="box item item2 item3 item4">
+                <div class="line"></div>
+                <div class="line two"></div>
+                <img class="icon" src="images/tag_art.png" alt="">
+                <div class="title">欢迎来到[2016生活家年华]</div>
+                <div class="item2-content">
+                    <p class="time">
+                        时间：1月2日 18：30-20：00
+                    </p>
+                    <p class="merchants">
+                        商家：单向空间
+                    </p>
+                    <p class="contents">
+                        内容：高颜值木工教你快速制作家具
+                    </p>
+                    <p class="price">价钱：¥100</p>
+                    <p class="num">
+                        已报名：4／5
+                    </p>
+                </div>
+                <div class="item2-btn">立即报名</div>
+                <div class="item2-btn full speech">报名人数已满</div>
+                <div class="item2-btn full speech"><span>已报名</span><img src="images/correct.png" alt=""></div>
+                <div class="success" ng-show="false">
+                    <img src="images/succeed.png" alt="">
+                    <p class="text">报名成功</p>
+                </div>
+                <div class="success" ng-show="false">
+                    <img src="images/fail.png" alt="">
+                    <p class="text">报名失败</p>
+                </div>
+            </div>
+        </div>
+        <div class="list" id="two">
+            <div class="box item item2">
+                <div class="btn">1月1日</div>
+                <div class="line"></div>
+                <div class="line two"></div>
+                <div class="title">欢迎来到[2016生活家年华]</div>
+                <div class="item2-content">
+                    <p class="time">
+                        时间：1月2日 18：30-20：00
+                    </p>
+                    <p class="merchants">
+                        商家：单向空间
+                    </p>
+                    <p class="contents">
+                        内容：高颜值木工教你快速制作家具
+                    </p>
+                    <p class="price">价钱：¥100</p>
+                    <p class="num">
+                        已报名：4／5
+                    </p>
+                </div>
+                <div class="item2-btn">立即报名</div>
+                <div class="item2-btn full">报名人数已满</div>
+                <div class="item2-btn full"><span>已报名</span><img src="images/correct.png" alt=""></div>
+                <div class="success" ng-show="false">
+                    <img src="images/succeed.png" alt="">
+                    <p class="text">报名成功</p>
+                </div>
+                <div class="success" ng-show="false">
+                    <img src="images/fail.png" alt="">
+                    <p class="text">报名失败</p>
+                </div>
+            </div>
+            <div class="box item item2 item4">
+                <div class="line"></div>
+                <div class="line two"></div>
+                <div class="title">欢迎来到[2016生活家年华]</div>
+                <div class="item2-content">
+                    <p class="time">
+                        时间：1月2日 18：30-20：00
+                    </p>
+                    <p class="merchants">
+                        商家：单向空间
+                    </p>
+                    <p class="contents">
+                        内容：高颜值木工教你快速制作家具
+                    </p>
+                    <p class="price">价钱：¥100</p>
+                    <p class="num">
+                        已报名：4／5
+                    </p>
+                </div>
+                <div class="item2-btn">立即报名</div>
+                <div class="item2-btn full">报名人数已满</div>
+                <div class="item2-btn full"><span>已报名</span><img src="images/correct.png" alt=""></div>
+                <div class="success" ng-show="false">
+                    <img src="images/succeed.png" alt="">
+                    <p class="text">报名成功</p>
+                </div>
+                <div class="success" ng-show="false">
+                    <img src="images/fail.png" alt="">
+                    <p class="text">报名失败</p>
+                </div>
+            </div>
+            <div class="box item item2 item4">
+                <div class="line"></div>
+                <div class="line two"></div>
+                <div class="title">欢迎来到[2016生活家年华]</div>
+                <div class="item2-content">
+                    <p class="time">
+                        时间：1月2日 18：30-20：00
+                    </p>
+                    <p class="merchants">
+                        商家：单向空间
+                    </p>
+                    <p class="contents">
+                        内容：高颜值木工教你快速制作家具
+                    </p>
+                    <p class="price">价钱：¥100</p>
+                    <p class="num">
+                        已报名：4／5
+                    </p>
+                </div>
+                <div class="item2-btn">立即报名</div>
+                <div class="item2-btn full">报名人数已满</div>
+                <div class="item2-btn full"><span>已报名</span><img src="images/correct.png" alt=""></div>
+                <div class="success" ng-show="false">
+                    <img src="images/succeed.png" alt="">
+                    <p class="text">报名成功</p>
+                </div>
+                <div class="success" ng-show="false">
+                    <img src="images/fail.png" alt="">
+                    <p class="text">报名失败</p>
+                </div>
+            </div>
+            <div class="box item item2 item3 item4">
+                <div class="line"></div>
+                <div class="line two"></div>
+                <img class="icon" src="images/tag_life.png" alt="">
+                <div class="title">欢迎来到[2016生活家年华]</div>
+                <div class="item2-content">
+                    <p class="time">
+                        时间：1月2日 18：30-20：00
+                    </p>
+                    <p class="merchants">
+                        商家：单向空间
+                    </p>
+                    <p class="contents">
+                        内容：高颜值木工教你快速制作家具
+                    </p>
+                    <p class="price">价钱：¥100</p>
+                    <p class="num">
+                        已报名：4／5
+                    </p>
+                </div>
+                <div class="item2-btn">立即报名</div>
+                <div class="item2-btn full speech">报名人数已满</div>
+                <div class="item2-btn full speech"><span>已报名</span><img src="images/correct.png" alt=""></div>
+                <div class="success" ng-show="false">
+                    <img src="images/succeed.png" alt="">
+                    <p class="text">报名成功</p>
+                </div>
+                <div class="success" ng-show="false">
+                    <img src="images/fail.png" alt="">
+                    <p class="text">报名失败</p>
+                </div>
+            </div>
+        </div>
+        <div class="list" id="three">
+            <div class="box item item2">
+                <div class="btn">1月2日</div>
+                <div class="line"></div>
+                <div class="line two"></div>
+                <div class="title">欢迎来到[2016生活家年华]</div>
+                <div class="item2-content">
+                    <p class="time">
+                        时间：1月2日 18：30-20：00
+                    </p>
+                    <p class="merchants">
+                        商家：单向空间
+                    </p>
+                    <p class="contents">
+                        内容：高颜值木工教你快速制作家具
+                    </p>
+                    <p class="price">价钱：¥100</p>
+                    <p class="num">
+                        已报名：4／5
+                    </p>
+                </div>
+                <div class="item2-btn">立即报名</div>
+                <div class="item2-btn full">报名人数已满</div>
+                <div class="item2-btn full"><span>已报名</span><img src="images/correct.png" alt=""></div>
+                <div class="success" ng-show="false">
+                    <img src="images/succeed.png" alt="">
+                    <p class="text">报名成功</p>
+                </div>
+                <div class="success" ng-show="false">
+                    <img src="images/fail.png" alt="">
+                    <p class="text">报名失败</p>
+                </div>
+            </div>
+            <div class="box item item2 item4">
+                <div class="line"></div>
+                <div class="line two"></div>
+                <div class="title">欢迎来到[2016生活家年华]</div>
+                <div class="item2-content">
+                    <p class="time">
+                        时间：1月2日 18：30-20：00
+                    </p>
+                    <p class="merchants">
+                        商家：单向空间
+                    </p>
+                    <p class="contents">
+                        内容：高颜值木工教你快速制作家具
+                    </p>
+                    <p class="price">价钱：¥100</p>
+                    <p class="num">
+                        已报名：4／5
+                    </p>
+                </div>
+                <div class="item2-btn">立即报名</div>
+                <div class="item2-btn full">报名人数已满</div>
+                <div class="item2-btn full"><span>已报名</span><img src="images/correct.png" alt=""></div>
+                <div class="success" ng-show="false">
+                    <img src="images/succeed.png" alt="">
+                    <p class="text">报名成功</p>
+                </div>
+                <div class="success" ng-show="false">
+                    <img src="images/fail.png" alt="">
+                    <p class="text">报名失败</p>
+                </div>
+            </div>
+            <div class="box item item2 item4">
+                <div class="line"></div>
+                <div class="line two"></div>
+                <div class="title">欢迎来到[2016生活家年华]</div>
+                <div class="item2-content">
+                    <p class="time">
+                        时间：1月2日 18：30-20：00
+                    </p>
+                    <p class="merchants">
+                        商家：单向空间
+                    </p>
+                    <p class="contents">
+                        内容：高颜值木工教你快速制作家具
+                    </p>
+                    <p class="price">价钱：¥100</p>
+                    <p class="num">
+                        已报名：4／5
+                    </p>
+                </div>
+                <div class="item2-btn">立即报名</div>
+                <div class="item2-btn full">报名人数已满</div>
+                <div class="item2-btn full"><span>已报名</span><img src="images/correct.png" alt=""></div>
+                <div class="success" ng-show="false">
+                    <img src="images/succeed.png" alt="">
+                    <p class="text">报名成功</p>
+                </div>
+                <div class="success" ng-show="false">
+                    <img src="images/fail.png" alt="">
+                    <p class="text">报名失败</p>
+                </div>
+            </div>
+            <div class="box item item2 item3 item4">
+                <div class="line"></div>
+                <div class="line two"></div>
+                <img class="icon" src="images/tag_design.png" alt="">
+                <div class="title">欢迎来到[2016生活家年华]</div>
+                <div class="item2-content">
+                    <p class="time">
+                        时间：1月2日 18：30-20：00
+                    </p>
+                    <p class="merchants">
+                        商家：单向空间
+                    </p>
+                    <p class="contents">
+                        内容：高颜值木工教你快速制作家具
+                    </p>
+                    <p class="price">价钱：¥100</p>
+                    <p class="num">
+                        已报名：4／5
+                    </p>
+                </div>
+                <div class="item2-btn">立即报名</div>
+                <div class="item2-btn full speech">报名人数已满</div>
+                <div class="item2-btn full speech"><span>已报名</span><img src="images/correct.png" alt=""></div>
+                <div class="success" ng-show="false">
+                    <img src="images/succeed.png" alt="">
+                    <p class="text">报名成功</p>
+                </div>
+                <div class="success" ng-show="false">
+                    <img src="images/fail.png" alt="">
+                    <p class="text">报名失败</p>
+                </div>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <div ng-include="'partials/footer.html'"></div>
+</div>
+
+<script src="js/angular.js"></script>
+<script src="js/jquery-2.0.3.min.js"></script>
+<script src="//cdn.bootcss.com/uikit/2.25.0/js/uikit.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>

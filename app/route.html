@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>活动地址</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <link rel="stylesheet" href="css/normalize.css" >
+    <link rel="stylesheet" href="css/ticket.css" >
+</head>
+<body ng-controller="routeCtrl">
+<div class="container">
+    <div >
+        <!--[if lt IE 8]>
+        <p class="browsehappy">你的浏览器版本<strong>太低了</strong> 快
+            <a href="http://browsehappy.com/">升级</a>一下吧</p>
+        <![endif]-->
+
+    </div>
+    <div ng-include="'partials/banner.html'"></div>
+    <div class="content">
+        <div class="box entrance">
+            <div class="btn">活动地址</div>
+            <div class="line"></div>
+            <div class="line two"></div>
+            <div class="title address">地址北京三里屯太古里南区橙色大厅</div>
+            <div class="code-box">
+                <img src="images/live_address.jpg" alt="">
+            </div>
+        </div>
+    </div>
+    <div ng-include="'partials/footer.html'"></div>
+</div>
+
+<script src="js/angular.js"></script>
+<script src="js/route.js"></script>
+
+</body>
+</html>
